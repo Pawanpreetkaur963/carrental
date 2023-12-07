@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3307
--- Generation Time: Dec 06, 2023 at 11:33 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Host: 127.0.0.1
+-- Generation Time: Dec 07, 2023 at 08:46 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.1.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `carrental_db`
+-- Database: `carrental`
 --
 
 -- --------------------------------------------------------
@@ -33,7 +33,7 @@ CREATE TABLE `comments` (
   `book_id` int(11) DEFAULT NULL,
   `username` varchar(100) DEFAULT NULL,
   `date_of_submission` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `comments`
@@ -55,7 +55,7 @@ CREATE TABLE `tblbooking` (
   `vehicle_id` int(11) DEFAULT NULL,
   `fromdate` date DEFAULT NULL,
   `todate` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tblbooking`
@@ -63,7 +63,8 @@ CREATE TABLE `tblbooking` (
 
 INSERT INTO `tblbooking` (`booking_num`, `userid`, `vehicle_id`, `fromdate`, `todate`) VALUES
 (1, 4, 1, '2023-12-04', '2023-12-08'),
-(2, 4, 3, '2023-12-08', '2023-12-09');
+(2, 4, 3, '2023-12-08', '2023-12-09'),
+(3, 8, 8, '2023-12-05', '2023-12-09');
 
 -- --------------------------------------------------------
 
@@ -76,7 +77,7 @@ CREATE TABLE `tblbrands` (
   `vehicle_manufacturer` varchar(100) DEFAULT NULL,
   `name` varchar(100) DEFAULT NULL,
   `main_featurer` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tblbrands`
@@ -106,7 +107,7 @@ CREATE TABLE `tbluser` (
   `dob` date DEFAULT NULL,
   `country` varchar(100) DEFAULT NULL,
   `register_date` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbluser`
@@ -114,7 +115,8 @@ CREATE TABLE `tbluser` (
 
 INSERT INTO `tbluser` (`user_id`, `fullname`, `password`, `contactno`, `user_type`, `user_mail`, `dob`, `country`, `register_date`) VALUES
 (1, 'Admin', '81dc9bdb52d04dc20036dbd8313ed055', '9876543211', 'admin', 'admin@gmail.com', '2023-12-04', 'CA', '2023-12-05'),
-(4, 'Naira', '81dc9bdb52d04dc20036dbd8313ed055', '23467886766', 'user', 'n@gmail.com', NULL, NULL, NULL);
+(4, 'Naira', '81dc9bdb52d04dc20036dbd8313ed055', '23467886766', 'user', 'n@gmail.com', NULL, NULL, NULL),
+(8, 'Pawanpreet Kaur', 'f09696910bdd874a99cd74c8f05b5c44', '4139961728', 'user', 'pawanpreetkaurrandhawa369@gmail.com', '2003-06-09', 'Canada', '2023-12-07');
 
 -- --------------------------------------------------------
 
@@ -129,7 +131,7 @@ CREATE TABLE `tblvehicle` (
   `fuel_type` varchar(50) NOT NULL,
   `seatingcapacity` int(11) DEFAULT NULL,
   `brandid` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tblvehicle`
@@ -165,7 +167,7 @@ ALTER TABLE `tbluser`
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

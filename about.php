@@ -17,7 +17,7 @@ include 'includes/header.php';
     </div>
 	
 	 <div class="about-content">
-      <h2>About Us</h2>
+      <h2>About Us </h2>
 	  <br>
       <p>Welcome to Winnipeg Car Rentals, your premier destination for hassle-free and reliable car rental services in the heart of Manitoba. At Winnipeg Car Rentals, we take pride in providing an unparalleled experience to our customers, ensuring they explore the vibrant city of Winnipeg and beyond with comfort and convenience.</p>
     </div>
