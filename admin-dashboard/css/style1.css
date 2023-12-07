@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.ttf');
+}
+
+body {
+	font-family:'Raleway';
+}
+
+p,a,h1,h2,h3,h4,h5,h6,span {
+	font-family:'Raleway';
+}
+
+a{transition: 0.35s;}
+
+/* top header start */
+.logo
+{
+margin-top:-10px;
+}
+.navhead
+{
+margin-top:75px;
+
+}
+.navhead .nav-pills>li>a {
+    border-radius: 0px;
+}
+
+.headright
+{
+margin-top:70px;
+
+font-family:raleway;
+}
+
+#navtop .input-group-btn button
+{
+    
+    padding:9px 12px;
+}
+
+
+/* top header ends */
+
+/* slider start */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+ {
+  margin:auto;    
+ }
+ /* slider ends */
+ 
+ /* popular_stock start */
+ .popularhead
+ {
+ font-family:raleway;
+ color:#697071;
+
+ padding:70px;
+ 
+ }
+ .popular
+ {
+ font-family:raleway;
+ border:gray 1px solid;
+ height:555px;
+ font-size:16px;
+
+ }
+ 
+ 
+ 
+ 
+ /* popular_stock end */
+ /* top brands start */
+ 
+ #best 
+{
+font-family:raleway;
+
+}
+
+ 
+ .head1
+{
+
+text-align:center;
+
+}
+.content2
+{
+padding:20px;
+}
+.content1
+{
+padding-bottom:10px;
+
+}
+#best ul
+{
+padding:0px;
+}
+#best a:hover
+{
+color:#002F6F;
+text-decoration:none;
+}
+#best h3
+{padding-bottom:20px;}
+#topbrands 
+{
+font-family:raleway;
+
+}
+
+/* top brands ends */
+ /* login form start */
+ 
+ 
+ ul .multi-column-dropdown
+{
+list-style:none;
+
+}  
+ ul li 
+  
+ {
+list-style:none;
+
+} 
+ a
+ {
+ 
+ 
+ color:#666666;
+ }
+ /* login form  end */
+
+/* products start */
+
+ul.product-top-list li
+{
+    
+	 
+    
+}
+.brand_container
+{
+padding:0px;
+background-color:pink;
+}
+.product_container
+{
+height:500;
+border-left:1px solid #e3e3e3;
+
+}
+.product{
+	
+	
+	padding:10px 10px;
+	margin-bottom:10px;
+	
+}
+.product_image {
+	height:240px;
+	
+  }
+
+/* products end */
+.product_details {
+color:gray;
+font-family:raleway;
+text-transform:capitalize;
+margin-left:20px;
+margin-top:30px;
+
+}
+.h
+{
+font-weight:500;
+}
+/* terms and conditions start */
+#terms
+{
+font-family:raleway;
+}
+#terms h3
+{
+text-align:center;
+}
+#terms p
+{text-align:justify;
+font-size:12px;
+}
+
+/* terms and conditions end */
+/* footer starts */
+#footer
+{
+padding: 30px 0px 40px 0px;background: #333;font-family:raleway;color:#5bc0de;font-size:15px;
+border-bottom: 1px solid #5bc0de ;
+
+}
+#footer a { color:white;}
+.headings
+{
+text-transform:uppercase;
+}
+#footer ul
+{
+padding:0px;
+}
+.social a
+{
+font-size:25px;
+}
+
+.footer-list li
+{display:inline-block;
+margin-right:8px;
+}
+
+#footer a:hover
+{
+color:#5bc0de;
+text-decoration:none;
+}
+.footer-copyright
+{
+color:#5bc0de;
+text-align:center;
+}
+.copyright
+{
+    background-color: #333;
+    padding-top: 15px; padding-bottom: 15px;
+}
+.copyright a
+{
+    
+    color:white;
+}
+.copyright a:hover
+{
+    text-decoration: none;
+    color:#5bc0de;
+}
+/* footer ends */
